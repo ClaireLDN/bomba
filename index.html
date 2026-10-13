@@ -1,22 +1,138 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClaireVibeCoding</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F6F3EE;color:#1D1C1A;font-family:Manrope,system-ui,sans-serif}
+a{color:#0F5C5A}a:hover{color:#0A4342}
+.wrap{padding:0 64px;box-sizing:border-box}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.card{display:flex;flex-direction:column;gap:16px;background:#FFFFFF;border:1px solid #E4DED2;border-radius:16px;padding:24px;text-decoration:none;color:#1D1C1A;box-sizing:border-box;transition:border-color .2s,transform .2s}
+.card:hover{border-color:#0F5C5A;transform:translateY(-2px)}
+.card:focus-visible{outline:3px solid #0F5C5A;outline-offset:3px}
+@media (max-width:640px){.wrap{padding:0 16px}.h1{font-size:40px !important}}
+</style>
+</head>
+<body>
+<div style="width:1280px;max-width:100%;box-sizing:border-box">
 
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Bomba -  USSD - User Journey</title>
-      <meta name="description" content="Enables users to manage mobile savings accounts via USSD, offering deposits, withdrawals, balance checks, and loan services without internet access." />
-      <meta name="robots" content="noindex, nofollow" />
-      <style>html, body { height: 100%; margin: 0; } #root { height: 100%; }</style>
-      
-    </head>
+  <!-- Header -->
+  <header class="wrap" style="display:flex;align-items:center;padding-top:28px;padding-bottom:28px">
+    <div style="display:flex;align-items:center;gap:12px">
+      <div style="width:36px;height:36px;border-radius:10px;background:#0F5C5A;color:#FFFFFF;display:flex;align-items:center;justify-content:center;font-family:Fraunces,Georgia,serif;font-weight:700;font-size:18px">C</div>
+      <div style="font-family:Fraunces,Georgia,serif;font-weight:700;font-size:20px">ClaireVibeCoding</div>
+    </div>
+  </header>
 
-    <body>
-      
-      <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
-      
-    </body>
-  </html>
-  
+  <!-- Hero -->
+  <section class="wrap" style="padding-top:64px;padding-bottom:72px;max-width:920px">
+    <p style="margin:0 0 16px;font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#0F5C5A">Product Designer · B2B SaaS & fintech</p>
+    <h1 class="h1" style="margin:0 0 24px;font-family:Fraunces,Georgia,serif;font-weight:700;font-size:64px;line-height:1.05;letter-spacing:-.01em">Mise en pratique du Vibe coding</h1>
+    <p style="margin:0;font-size:19px;line-height:1.6;color:#4A4741;max-width:680px">Applications mobiles, parcours USSD, concepts IA et dashboards d'analyse, prototypés directement en code. Choisissez un projet pour ouvrir le prototype interactif.</p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projets" class="wrap" style="padding-bottom:88px">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:28px;gap:16px;flex-wrap:wrap">
+      <h2 style="margin:0;font-family:Fraunces,Georgia,serif;font-weight:700;font-size:36px">Projets</h2>
+      <p style="margin:0;font-size:15px;color:#5B5852">5 prototypes · type de projet, client et accès</p>
+    </div>
+
+    <div class="grid">
+
+      <!-- 1. Loan calculator KAMOA -->
+      <a class="card" href="https://beaver-bliss-04358989.figma.site" target="_blank" rel="noopener">
+        <div style="display:flex;align-items:center;gap:16px">
+          <div aria-hidden="true" style="width:56px;height:56px;border-radius:14px;background:#E2EEEB;color:#0F5C5A;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M10 18h4"/><circle cx="12" cy="10" r="3.2"/><path d="M12 8.6v2.8M11.1 9.4h1.4"/></svg>
+          </div>
+          <span style="font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#0F5C5A;background:#E2EEEB;padding:5px 10px;border-radius:999px">App mobile · Prêt</span>
+        </div>
+        <div>
+          <h3 style="margin:0 0 6px;font-family:Fraunces,Georgia,serif;font-weight:600;font-size:24px;line-height:1.2">Loan calculator</h3>
+          <p style="margin:0;font-size:14px;color:#5B5852"><strong style="color:#1D1C1A">Client :</strong> KAMOA · Fintech</p>
+        </div>
+        <p style="margin:0;font-size:15px;line-height:1.55;color:#4A4741">Simulateur de prêt : montant, durée et échéancier de remboursement, pensé pour un usage mobile.</p>
+        <span style="margin-top:auto;font-size:15px;font-weight:700;color:#0F5C5A">Ouvrir le prototype →</span>
+      </a>
+
+      <!-- 2. ChatBot KAMOA -->
+      <a class="card" href="https://www.figma.com/make/pbk6UERLrkZuaWmymotsOT/AI-Chatbot-Interface?p=f&t=bSOqAbrgMSqrF3Zh-0" target="_blank" rel="noopener">
+        <div style="display:flex;align-items:center;gap:16px">
+          <div aria-hidden="true" style="width:56px;height:56px;border-radius:14px;background:#E2EEEB;color:#0F5C5A;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4V5z"/><circle cx="8.5" cy="10.5" r="1" fill="currentColor"/><circle cx="12" cy="10.5" r="1" fill="currentColor"/><circle cx="15.5" cy="10.5" r="1" fill="currentColor"/></svg>
+          </div>
+          <span style="font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#0F5C5A;background:#E2EEEB;padding:5px 10px;border-radius:999px">Concept · IA</span>
+        </div>
+        <div>
+          <h3 style="margin:0 0 6px;font-family:Fraunces,Georgia,serif;font-weight:600;font-size:24px;line-height:1.2">Concept ChatBot</h3>
+          <p style="margin:0;font-size:14px;color:#5B5852"><strong style="color:#1D1C1A">Client :</strong> KAMOA · Fintech</p>
+        </div>
+        <p style="margin:0;font-size:15px;line-height:1.55;color:#4A4741">Interface de chatbot conversationnel pour accompagner les clients dans leurs démarches financières.</p>
+        <span style="margin-top:auto;font-size:15px;font-weight:700;color:#0F5C5A">Ouvrir le prototype →</span>
+      </a>
+
+      <!-- 3. USSD BOMBA -->
+      <a class="card" href="https://clairevibecode.netlify.app/">
+        <div style="display:flex;align-items:center;gap:16px">
+          <div aria-hidden="true" style="width:56px;height:56px;border-radius:14px;background:#E2EEEB;color:#0F5C5A;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><rect x="9" y="5" width="6" height="3" rx=".5"/><circle cx="9.5" cy="11.5" r=".6" fill="currentColor"/><circle cx="12" cy="11.5" r=".6" fill="currentColor"/><circle cx="14.5" cy="11.5" r=".6" fill="currentColor"/><circle cx="9.5" cy="14.5" r=".6" fill="currentColor"/><circle cx="12" cy="14.5" r=".6" fill="currentColor"/><circle cx="14.5" cy="14.5" r=".6" fill="currentColor"/><circle cx="9.5" cy="17.5" r=".6" fill="currentColor"/><circle cx="12" cy="17.5" r=".6" fill="currentColor"/><circle cx="14.5" cy="17.5" r=".6" fill="currentColor"/></svg>
+          </div>
+          <span style="font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#0F5C5A;background:#E2EEEB;padding:5px 10px;border-radius:999px">Parcours USSD</span>
+        </div>
+        <div>
+          <h3 style="margin:0 0 6px;font-family:Fraunces,Georgia,serif;font-weight:600;font-size:24px;line-height:1.2">User journey USSD</h3>
+          <p style="margin:0;font-size:14px;color:#5B5852"><strong style="color:#1D1C1A">Client :</strong> BOMBA</p>
+        </div>
+        <p style="margin:0;font-size:15px;line-height:1.55;color:#4A4741">Parcours par menus USSD pour un usage sur téléphone basique, sans smartphone ni connexion data.</p>
+        <span style="margin-top:auto;font-size:15px;font-weight:700;color:#0F5C5A">Ouvrir le prototype →</span>
+      </a>
+
+      <!-- 4. Dashboard marketing -->
+      <a class="card" href="https://www.figma.com/make/PeM8e9kNZj4loX6cb1sA54/Kamoa-Momo-Analytics-Dashboard?t=PLyOBNVfGgPbAvYW-1" target="_blank" rel="noopener">
+        <div style="display:flex;align-items:center;gap:16px">
+          <div aria-hidden="true" style="width:56px;height:56px;border-radius:14px;background:#E2EEEB;color:#0F5C5A;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="13" width="3.5" height="7" rx=".6"/><rect x="10.25" y="9" width="3.5" height="11" rx=".6"/><rect x="16.5" y="4" width="3.5" height="16" rx=".6"/></svg>
+          </div>
+          <span style="font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#0F5C5A;background:#E2EEEB;padding:5px 10px;border-radius:999px">Dashboard · Data</span>
+        </div>
+        <div>
+          <h3 style="margin:0 0 6px;font-family:Fraunces,Georgia,serif;font-weight:600;font-size:24px;line-height:1.2">Marketing performance</h3>
+          <p style="margin:0;font-size:14px;color:#5B5852"><strong style="color:#1D1C1A">Client :</strong> Banque BHC</p>
+        </div>
+        <p style="margin:0;font-size:15px;line-height:1.55;color:#4A4741">Suivi des performances marketing : canaux, acquisition et indicateurs clés.</p>
+        <span style="margin-top:auto;font-size:15px;font-weight:700;color:#0F5C5A">Ouvrir le prototype →</span>
+      </a>
+
+      <!-- 5. Dashboard analytics performance KAMOA -->
+      <a class="card" href="https://clone-quest-12883593.figma.site" target="_blank" rel="noopener">
+        <div style="display:flex;align-items:center;gap:16px">
+          <div aria-hidden="true" style="width:56px;height:56px;border-radius:14px;background:#E2EEEB;color:#0F5C5A;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M4 17l5-5 4 3 7-8"/><circle cx="20" cy="7" r="1.2" fill="currentColor"/></svg>
+          </div>
+          <span style="font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#0F5C5A;background:#E2EEEB;padding:5px 10px;border-radius:999px">Dashboard · Analytics</span>
+        </div>
+        <div>
+          <h3 style="margin:0 0 6px;font-family:Fraunces,Georgia,serif;font-weight:600;font-size:24px;line-height:1.2">Analytics performance prêt</h3>
+          <p style="margin:0;font-size:14px;color:#5B5852"><strong style="color:#1D1C1A">Client :</strong> KAMOA · Fintech</p>
+        </div>
+        <p style="margin:0;font-size:15px;line-height:1.55;color:#4A4741">Tableau de bord d'analyse des performances des prêts : volumes, délais et taux de remboursement.</p>
+        <span style="margin-top:auto;font-size:15px;font-weight:700;color:#0F5C5A">Ouvrir le prototype →</span>
+      </a>
+
+    </div>
+  </section>
+
+  <footer class="wrap" style="padding-top:32px;padding-bottom:40px;border-top:1px solid #E4DED2;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-size:15px;color:#4A4741">
+    <p style="margin:0">Plus de 20 ans d'expérience en product design · Nouvelle-Aquitaine, France</p>
+    <a href="https://clairepons.framer.ai" target="_blank" rel="noopener" style="font-weight:700;color:#0F5C5A">Voir mon site · clairepons.framer.ai →</a>
+  </footer>
+
+</div>
+</body>
+</html>
